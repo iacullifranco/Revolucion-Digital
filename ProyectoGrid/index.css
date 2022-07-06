@@ -1,0 +1,47 @@
+.grid {
+  
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: auto;
+  grid-gap: 1rem;
+  padding: 1rem;
+  background-color: pink;
+  width: 100vw;
+  height: 100vh;
+
+ 
+  justify-items: center; 
+  align-items: center; 
+
+ 
+  grid-auto-flow :  dense;  row, column, dense
+
+}
+
+.grid-item {
+
+width: 100%;
+height: 100%;
+background-color: gold;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.grid-featured-top {
+
+background-color: blue;
+grid-column: 1 / span 2;
+grid-row: 1;
+
+}
+
+.grid-featured-bottom {
+
+background-color: green;
+grid-column: 2/  2;
+grid-row: 6;
+
+}
+
